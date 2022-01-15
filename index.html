@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Group 23: Pocket Monster Project</title>
+    <style>
+      h1 {
+        color: #111;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 275px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-align: center;
+        background-image: url(files/background.jpeg);
+        background-size: 100%;
+      }
+
+      h2 {
+        color: #111;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 100px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+        padding: 40px;
+        text-align: center;
+      }
+
+      br {
+        line-height: 150%;
+     }
+
+      h4 {
+        font-weight: bold;
+        font-size: 50px;
+        color: yellow;
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+        margin-top: 500px;
+      }
+
+      h5 {
+        font-weight: bold;
+        font-size: 50px;
+        text-align: left;
+        margin-left: 60px;
+      }
+
+      h6 {
+        font-size: 40px;
+        text-align: left;
+        margin-left: 40px;
+      }
+
+      .text {
+        font-weight: bold;
+        font-size: 30px;
+        color: yellow;
+        text-align: center;
+        letter-spacing: -1px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+      }
+
+      .text2 {
+        font-weight: bold;
+        font-size: 30px;
+        color: #00008B;
+        text-align: left;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+        margin-left: 200px;
+      }
+      .row {
+        display: flex;
+      }
+      .column {
+        flex: 50%;
+        padding: 5px;
+      }
+      .background2 {
+        background-image: url(files/background2.jpeg);
+        background-size: contain;
+
+      }
+      .background3 {
+        background-image: url(files/background3.png);
+        background-size: 100%;
+        background-repeat: repeat;
+        background-position: right;  
+        padding-top: 100px;
+      }
+
+      #toc_container {
+          margin-top: 200px;
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 25px;
+    margin-bottom: 1em;
+    width: 50%;
+    margin-left: 200px;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+    </style>
+  </head>
+
+  <body class="backgroundbody">
+    <h1 id="Part5">Pocket Monster Project</h1>
+
+      <!-- </div> Start page 2 -->
+    <div class="background2">
+      <h4>Application demo (Click on the video to play)</h4>
+      <div class="row">
+        <div class="column">
+          <video
+            id="loginPageVideo"
+            onclick="playLoginPage()"
+            style="width: 100%"
+          >
+            <source src="files/loginpage.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="column">
+          <video
+            id="randomModeVideo"
+            onclick="playRandomMode()"
+            style="width: 100%"
+          >
+            <source src="files/random.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p class="text">Login Page</p>
+        </div>
+        <div class="column">
+          <p class="text">Random Mode</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="column">
+            <video
+              id="normalModeVideo"
+              onclick="playNormalMode()"
+              style="width: 100%"
+            >
+              <source src="files/chooseMonster.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <video
+            id="battlePhaseVideo"
+            onclick="playBattlePhase()"
+            style="width: 100%"
+          >
+            <source src="files/battlephase.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p class="text">Normal Mode</p>
+        </div>
+        <div class="column">
+          <p class="text">Battle Phase</p>
+        </div>
+
+    </div>
+
+        <!-- </div> Start page 3 -->
+    <div class="background3">
+        <h2> Assignment 3: Our IT Project</h2>
+        <p class="text2">Lecturer: Dr. Long Nguyen <br>
+          Team name: Group 23 <br>
+          Team members:<br>
+          • Cao Ngoc Son - s3916151<br>
+          • Doan Chanh Thong- s3852304 <br>
+          • Le Thanh Tai – s3760615 <br>
+          • Nguyen Tan Thinh - s3927186 <br>
+          Date of submission: 16 January 2022
+          </p>
+
+          <!-- Table of contents -->
+          <div id="toc_container">
+            <p class="toc_title"> Table of Contents </p>
+            <ul class="toc_list">
+              <li><a href="#Part1">I Team Profile</a>
+              <ul>
+                <li><a href="#Part1.1">1.1 Team name</a></li>
+                <li><a href="#Part1.2">1.2 Personal Information</a></li>
+                <li><a href="#Part1.3">1.3 Group Processes</a></li>
+                <li><a href="#Part1.4">1.4 Career Plan</a></li>
+              </ul>
+            </li>
+            <li><a href="#Part2">II Tools</a></li>
+            <li><a href="#Part3">III Project Descriptions</a></li>
+            <ul>
+                <li><a href="#Part3.1">3.1 Overview</a></li>
+                <li><a href="#Part3.2">3.2 Aim</a></li>
+                <li><a href="#Part3.3">3.3 Plan and Progress</a></li>
+                <li><a href="#Part3.4">3.4 Roles</a></li>
+                <li><a href="#Part3.5">3.5 Scope and Limit</a></li>
+                <li><a href="#Part3.6">3.6 Tools and Technologies</a></li>
+                <li><a href="#Part3.7">3.7 Testing</a></li>
+                <li><a href="#Part3.8">3.8 Timeframe</a></li>
+                <li><a href="#Part3.9">3.9 Risks</a></li>
+                <li><a href="#Part3.10">3.10 Group Reflection and Communications</a></li>
+              </ul>
+              <li><a href="#Part4">IV Skills and Jobs</a></li>
+              <li><a href="#Part5">V Group Reflection</a></li>
+            </ul>
+            </div>
+
+            <h5 id="Part1"> I Team Profile </h5>
+            <h6 id="Part1.1"> 1.1 Team name</h6>
+            <h6 id="Part1.2">1.2 Personal Information</h6>
+            <h6 id="Part1.3">1.3 Group Processes</h6>
+            <h6 id="Part1.4">1.4 Career Plan</h6>
+            <h5 id="Part2">II Tools</h5>
+            <h5 id="Part3">III Project Descriptions</h5>
+            <h6 id="Part3.1">3.1 Overview </h6>
+            <h6 id="Part3.2">3.2 Aim</h6>
+            <h6 id="Part3.3">3.3 Plan and Progress</h6>
+            <h6 id="Part3.4">3.4 Roles</h6>
+            <h6 id="Part3.5">3.5 Scope and Limit</h6>
+            <h6 id="Part3.6">3.6 Tools and Technologies</h6>
+            <h6 id="Part3.7">3.7 Testing</h6>
+            <h6 id="Part3.8">3.8 Timeframe</h6>
+            <h6 id="Part3.9">3.9 Risks</h6>
+            <h6 id="Part3.10">3.10 Group Reflection and Communications</h6>
+            <h5 id="Part4">IV Skills and Jobs</h5>
+            <h5 id="Part5">V Group Reflection</h5>
+
+    </div>
+
+  
+  </body>
+
+  <script>
+    var randomVideo = document.getElementById("randomModeVideo");
+    var loginVideo = document.getElementById("loginPageVideo");
+    var normalVideo = document.getElementById("normalModeVideo");
+    var battleVideo = document.getElementById("battlePhaseVideo");
+
+    function playLoginPage() {
+      if (loginVideo.paused) loginVideo.play();
+      else loginVideo.pause();
+    }
+    function playRandomMode() {
+      if (randomVideo.paused) randomVideo.play();
+      else randomVideo.pause();
+    }
+    function playNormalMode() {
+      if (normalVideo.paused) normalVideo.play();
+      else normalVideo.pause();
+    }
+    function playBattlePhase() {
+      if (battleVideo.paused) battleVideo.play();
+      else battleVideo.pause();
+    }
+  </script>
+</html>
